@@ -11,11 +11,6 @@ jobs:
 #      - name: List files in the repository
 #        run: |
 #          ls ${{ github.workspace }}
-#      - uses: webfactory/ssh-agent@v0.7.0
-#        with:
-#          ssh-private-key: ${{ secrets.PODSPEC_SSH_KEY }}
-      - name: ls -a via ssh
-        uses: garygrossgarten/github-action-ssh@release
+      - uses: webfactory/ssh-agent@v0.7.0
         with:
-          command: ls -a
-          privateKey: ${{ secrets.PODSPEC_SSH_KEY }}
+          ssh-private-key: ${{ secrets.PODSPEC_SSH_KEY }}
