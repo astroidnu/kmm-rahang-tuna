@@ -18,3 +18,4 @@ jobs:
       - uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.PODSPEC_SSH_KEY }}
+      - run: git clone git@github.com:astroidnu/rahang-tuna-podspec.git
