@@ -1,15 +1,15 @@
 name: All Publish
 on:
   workflow_dispatch:
-#  push:
-#    branches:
-#      - "main"
+  push:
+    branches:
+      - "main"
 jobs:
   call-kmmbridge-publish:
     permissions:
       contents: write
       packages: write
-    uses: touchlab/KMMBridgeGithubWorkflow/.github/workflows/faktorybuildbranches.yml@v0.6
+    uses: touchlab/KMMBridgeGithubWorkflow/.github/workflows/faktorybuildbranches.yml@v0.8
     with:
       publishTask: kmmBridgePublish publishKotlinMultiplatformPublicationToGitHubPackagesRepository publishAndroidDebugPublicationToGitHubPackagesRepository publishAndroidReleasePublicationToGitHubPackagesRepository
     secrets:

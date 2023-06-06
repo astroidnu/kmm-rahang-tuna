@@ -1,7 +1,10 @@
 name: SSH Execution Test
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
-jobs:
+on:
+  workflow_dispatch:
+  #  push:
+  #    branches:
+  #      - "main"
   Test-SSH-Actions:
     runs-on: macos-latest
     steps:
