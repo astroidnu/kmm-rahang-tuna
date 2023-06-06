@@ -54,6 +54,7 @@ kmmbridge {
 //    Android version is not automatically incremented in KMMBridge, so if you need it to be aligned with the iOS version
 //    use manualVersions instead of githubReleaseVersions to set version manually
 //    manualVersions()
-    spm()
+//    spm()
     cocoapods("git@github.com:astroidnu/rahang-tuna-podspec.git")
+    versionPrefix.set("0.1")
 }
