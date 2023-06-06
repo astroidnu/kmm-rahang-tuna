@@ -56,5 +56,4 @@ kmmbridge {
 //    manualVersions()
 //    spm()
     cocoapods("git@github.com:astroidnu/rahang-tuna-podspec.git")
-    versionPrefix.set("0.1")
 }
