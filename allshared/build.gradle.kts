@@ -40,7 +40,6 @@ kotlin {
         extraSpecAttributes["libraries"] = "'c++', 'sqlite3'"
 
         framework {
-            baseName = "rahangtunaframework"
             export(project(":analytics"))
             isStatic = true
         }

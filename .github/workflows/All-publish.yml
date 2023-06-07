@@ -11,7 +11,6 @@ jobs:
       packages: write
     uses: touchlab/KMMBridgeGithubWorkflow/.github/workflows/faktorybuildbranches.yml@v0.8
     with:
-#      publishTask: kmmBridgePublish publishKotlinMultiplatformPublicationToGitHubPackagesRepository publishAndroidDebugPublicationToGitHubPackagesRepository publishAndroidReleasePublicationToGitHubPackagesRepository
-      publishTask: kmmBridgePublish publishKotlinMultiplatformPublicationToGitHubPackagesRepository
+      publishTask: kmmBridgePublish publishKotlinMultiplatformPublicationToGitHubPackagesRepository publishAndroidDebugPublicationToGitHubPackagesRepository publishAndroidReleasePublicationToGitHubPackagesRepository
     secrets:
       PODSPEC_SSH_KEY: ${{ secrets.PODSPEC_SSH_KEY }}
